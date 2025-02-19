@@ -1,0 +1,152 @@
+.sidebar {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+.sidebar.open {
+  transform: translateX(0);
+}
+.share-menu {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+.share-menu.open {
+  display: block;
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 100;
+}
+.modal.open {
+  display: block;
+}
+.modal img {
+  max-width: 90%;
+  max-height: 90%;
+}
+.close-button {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgb(243, 227, 10);
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+.download-button {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(237, 219, 13, 0.819);
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+}
+.download-button.show {
+  display: block;
+}
+.scroll-animation {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.scroll-animation.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.text-container {
+  text-align: center;
+}
+p {
+  text-align: center;
+  font-weight: bolder;
+}
+.section-title {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.section-title::after {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 0.25rem;
+  background-color: #ffd700;
+  margin: 0.5rem auto;
+}
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 20rem;
+  margin: 0 auto 2rem;
+}
+.carousel img {
+  border-radius: 50%;
+}
+.carousel .quote {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+}
+.carousel .author {
+  font-size: 1rem;
+  color: #ffd700;
+}
+.carousel .register {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  background-color: #ffd700;
+  color: #000;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 0.5rem;
+}
+.carousel .nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+.carousel .nav.left {
+  left: 0.5rem;
+}
+.carousel .nav.right {
+  right: 0.5rem;
+}
+.carousel .dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.carousel .dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #888;
+  border-radius: 50%;
+  margin: 0 0.25rem;
+  cursor: pointer;
+}
+.carousel .dot.active {
+  background-color: #fff;
+}
+body {
+  font-family: "Indie Flower" sans-serif;
+}

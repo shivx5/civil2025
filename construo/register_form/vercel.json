@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "register_backend.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "register_backend.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "register_form.html"
+    }
+  ]
+}

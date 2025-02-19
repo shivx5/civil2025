@@ -1,0 +1,423 @@
+<html>
+  <!-- Document Structure -->
+  <html lang="en"></html>
+  <head>
+    <!-- Page Metadata -->
+    <title>Construo-2K25</title>
+
+    <!-- Character Encoding and Viewport Settings -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- External Libraries -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="user_side_styles.css" />
+  </head>
+
+  <body class="bg-black text-white">
+    <!-- Main Navigation -->
+    <nav
+      class="bg-yellow-500 p-4 flex justify-between items-center fixed top-0 left-0 right-0 z-50"
+    >
+      <!-- Menu Button -->
+      <div class="flex items-center">
+        <button id="menuButton" class="text-white text-2xl">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- Page Title -->
+      <div class="text-center flex-grow">
+        <span class="text-white text-xl font-bold">Construo-2k25</span>
+      </div>
+
+      <!-- Social Media Links -->
+      <div class="flex items-center space-x-4">
+        <a
+          class="text-white text-2xl"
+          href="https://chat.whatsapp.com/invite/ConstruoGroupLink"
+          target="_blank"
+        >
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a
+          class="text-white text-2xl"
+          href="mailto:construosrmvec2025@gmail.com"
+        >
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Sidebar Navigation -->
+    <div
+      id="sidebar"
+      class="sidebar fixed top-0 left-0 h-full w-64 bg-yellow-500 p-4 z-50"
+    >
+      <button id="closeButton" class="text-white text-2xl mb-4">
+        <i class="fas fa-times"></i>
+      </button>
+      <ul>
+        <li class="mb-4">
+          <a href="#home" class="text-white text-xl">Home</a>
+        </li>
+        <li class="mb-4">
+          <a href="#event-poster" class="text-white text-xl">Event Poster</a>
+        </li>
+        <li class="mb-4">
+          <a href="#about-event" class="text-white text-xl">About Event</a>
+        </li>
+        <li class="mb-4">
+          <a href="#technical-events" class="text-white text-xl"
+            >Technical Events</a
+          >
+        </li>
+        <li class="mb-4">
+          <a href="#non-technical-events" class="text-white text-xl"
+            >Non-Technical Events</a
+          >
+        </li>
+        <li class="mb-4">
+          <a href="#guest-lecturer" class="text-white text-xl"
+            >Guest Lecturer</a
+          >
+        </li>
+        <li class="mb-4">
+          <a href="#organizers" class="text-white text-xl">Organizers</a>
+        </li>
+        <li class="mb-4">
+          <a href="#contact" class="text-white text-xl">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Home Section -->
+    <div id="home" class="relative text-center py-16 mt-16">
+      <img
+        alt="Lion logo with a crown and the text 'Construo 2025'"
+        class="mx-auto w-full h-auto"
+        src="https://storage.googleapis.com/a1aa/image/Ef2Q0M-dgsE_IVr8m1aSbKAOPlkcyw-RdzqB5Ml0u9c.jpg"
+      />
+      <div class="absolute inset-0 flex flex-col items-center justify-center">
+        <a
+          href="http://127.0.0.1:5500/register%20form/register_form.html"
+          target="_blank"
+        >
+          <button class="mt-4 bg-yellow-500 text-black py-2 px-8 rounded">
+            REGISTER
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Event Poster Section -->
+    <div id="event-poster" class="text-center py-8">
+      <h2 class="text-2xl font-bold mt-8">EVENT POSTER</h2>
+      <div class="mt-4">
+        <img
+          id="bridgeImage"
+          alt="A bridge over a valley with mountains in the background"
+          class="mx-auto cursor-pointer"
+          height="400"
+          src="https://storage.googleapis.com/a1aa/image/Ef2Q0M-dgsE_IVr8m1aSbKAOPlkcyw-RdzqB5Ml0u9c.jpg"
+          width="600"
+        />
+      </div>
+    </div>
+
+    <!-- About Events Section -->
+    <div id="about-event" class="text-center py-8">
+      <h2 class="text-2xl font-bold mt-8">ABOUT EVENTS</h2>
+      <div class="mt-4 px-4 text-lg leading-relaxed">
+        The Collage Symposium is dedicated to bringing together creative minds
+        in a fully interactive, mobile-friendly digital experience. With smooth
+        transitions and engaging animations, we aim to provide a seamless and
+        immersive event navigation.
+      </div>
+      <a
+        href="https://drive.google.com/file/d/1QamUh0gTev2cKHRPa3HWS2hVsKkDkrx6/view?usp=drivesdk"
+        target="_blank"
+      >
+        <button class="mt-8 bg-yellow-500 text-black py-2 px-6 rounded">
+          GALLERY
+        </button>
+      </a>
+    </div>
+
+    <!-- Technical Events Section -->
+    <div id="technical-events" class="text-center py-8">
+      <h2 class="text-2xl font-bold mt-8">TECHNICAL EVENTS</h2>
+      <div class="carousel" id="carousel-technical">
+        <i
+          class="fas fa-chevron-left nav left"
+          onclick="prevSlide('technical')"
+        ></i>
+        <img
+          id="technical-pic"
+          alt="Two people in formal attire presenting something"
+          class="mx-auto"
+          height="200"
+          src="https://storage.googleapis.com/a1aa/image/tYbMAlIWcnb1YUYSXQjSKx99PwOXyheOdGPE6JxSJWo.jpg"
+          width="200"
+        />
+        <i
+          class="fas fa-chevron-right nav right"
+          onclick="nextSlide('technical')"
+        ></i>
+        <div class="quote" id="technical-quote">"Paper Presentation"</div>
+        <div class="author" id="technical-author">Joe Smith: Fjcgnvhjbvgg</div>
+        <a href="https://forms.gle/C185myLs3hsqdkCC8" class="register"
+          >Register</a
+        >
+        <div class="dots" id="technical-dots">
+          <div class="dot active" onclick="goToSlide('technical', 0)"></div>
+          <div class="dot" onclick="goToSlide('technical', 1)"></div>
+          <div class="dot" onclick="goToSlide('technical', 2)"></div>
+          <div class="dot" onclick="goToSlide('technical', 3)"></div>
+          <div class="dot" onclick="goToSlide('technical', 4)"></div>
+          <div class="dot" onclick="goToSlide('technical', 5)"></div>
+          <div class="dot" onclick="goToSlide('technical', 6)"></div>
+          <div class="dot" onclick="goToSlide('technical', 7)"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Non-Technical Events Section -->
+    <div id="non-technical-events" class="text-center py-8">
+      <h2 class="text-2xl font-bold mt-8">NON-TECHNICAL EVENTS</h2>
+      <div class="carousel" id="carousel-non-technical">
+        <i
+          class="fas fa-chevron-left nav left"
+          onclick="prevSlide('non-technical')"
+        ></i>
+        <img
+          id="non-technical-pic"
+          alt="A person smiling and sitting in a relaxed pose"
+          class="mx-auto"
+          height="200"
+          src="https://storage.googleapis.com/a1aa/image/YcVDlS2dTQFgu5VD1nLcMQXNPwgr4o6rAllJNDEK-8s.jpg"
+          width="200"
+        />
+        <i
+          class="fas fa-chevron-right nav right"
+          onclick="nextSlide('non-technical')"
+        ></i>
+        <div class="quote" id="non-technical-quote">"Hanging Brick"</div>
+        <div class="author" id="non-technical-author">Joe Smith: Mohan</div>
+        <a href="https://forms.gle/C185myLs3hsqdkCC8" class="register"
+          >Register</a
+        >
+        <div class="dots" id="non-technical-dots">
+          <div class="dot active" onclick="goToSlide('non-technical', 0)"></div>
+          <div class="dot" onclick="goToSlide('non-technical', 1)"></div>
+          <div class="dot" onclick="goToSlide('non-technical', 2)"></div>
+          <div class="dot" onclick="goToSlide('non-technical', 3)"></div>
+          <div class="dot" onclick="goToSlide('non-technical', 4)"></div>
+          <div class="dot" onclick="goToSlide('non-technical', 5)"></div>
+          <div class="dot" onclick="goToSlide('non-technical', 6)"></div>
+          <div class="dot" onclick="goToSlide('non-technical', 7)"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Guest Lecturer Section -->
+    <div id="guest-lecturer" class="text-center py-8">
+      <h2 class="text-2xl font-bold mt-8">GUEST LECTURER</h2>
+      <div class="carousel" id="carousel-guest-lecturer">
+        <i
+          class="fas fa-chevron-left nav left"
+          onclick="prevSlide('guest-lecturer')"
+        ></i>
+        <img
+          id="guest-lecturer-pic"
+          alt="A person smiling with an orange background"
+          class="mx-auto"
+          height="200"
+          src="https://storage.googleapis.com/a1aa/image/A59fEa7Ucqrp-ajNezkHj4yQlWmA7AYVS1CNImKm73U.jpg"
+          width="200"
+        />
+        <i
+          class="fas fa-chevron-right nav right"
+          onclick="nextSlide('guest-lecturer')"
+        ></i>
+        <div class="quote" id="guest-lecturer-quote">"Civil engineering"</div>
+        <div class="author" id="guest-lecturer-author">Joe Smith: Sir....</div>
+        <a href="https://forms.gle/C185myLs3hsqdkCC8" class="register"
+          >Register</a
+        >
+        <div class="dots" id="guest-lecturer-dots">
+          <div
+            class="dot active"
+            onclick="goToSlide('guest-lecturer', 0)"
+          ></div>
+          <div class="dot" onclick="goToSlide('guest-lecturer', 1)"></div>
+          <div class="dot" onclick="goToSlide('guest-lecturer', 2)"></div>
+          <div class="dot" onclick="goToSlide('guest-lecturer', 3)"></div>
+          <div class="dot" onclick="goToSlide('guest-lecturer', 4)"></div>
+          <div class="dot" onclick="goToSlide('guest-lecturer', 5)"></div>
+          <div class="dot" onclick="goToSlide('guest-lecturer', 6)"></div>
+          <div class="dot" onclick="goToSlide('guest-lecturer', 7)"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Organizers Section -->
+    <div
+      id="organizers"
+      class="flex flex-col items-center justify-center min-h-screen"
+    >
+      <h1 class="text-white text-4xl font-semibold mb-2">ORGANIZERS</h1>
+      <div class="w-16 h-1 bg-yellow-500 mb-8"></div>
+      <div class="flex overflow-x-auto space-x-4">
+        <div class="flex-shrink-0 text-center">
+          <img
+            alt="Person standing in a classroom with desks and chairs"
+            class="w-72 h-72 object-cover rounded-full"
+            src="https://storage.googleapis.com/a1aa/image/3o8fkOA4a90amkOHYvi2f_fY4RaQEy32jJ3LGRfHO6I.jpg"
+          />
+          <p class="text-white mt-2">President</p>
+          <p class="text-white mt-1">Details</p>
+          <a href="https://www.instagram.com/president" target="_blank">
+            <button
+              class="mt-2 px-4 py-2 bg-yellow-500 text-black rounded-full"
+            >
+              Know More
+            </button>
+          </a>
+        </div>
+        <div class="flex-shrink-0 text-center">
+          <img
+            alt="Person standing in front of a machine in a workshop"
+            class="w-72 h-72 object-cover rounded-full"
+            src="https://storage.googleapis.com/a1aa/image/7O2WnCW8OG7mcD8P0nX5XqmawEXZ37sc8bB1Ett2-y4.jpg"
+          />
+          <p class="text-white mt-2">Mohan</p>
+          <p class="text-white mt-1">Details</p>
+          <a href="https://www.instagram.com/mohan" target="_blank">
+            <button
+              class="mt-2 px-4 py-2 bg-yellow-500 text-black rounded-full"
+            >
+              Know More
+            </button>
+          </a>
+        </div>
+        <div class="flex-shrink-0 text-center">
+          <img
+            alt="Person standing in front of a table with equipment in a workshop"
+            class="w-72 h-72 object-cover rounded-full"
+            src="https://storage.googleapis.com/a1aa/image/GlNh9RWh6wzdyCtq-nC-OGT7GcwPIYldma9AcDKD6Uc.jpg"
+          />
+          <p class="text-white mt-2">Details</p>
+          <p class="text-white mt-1">Details</p>
+          <a href="https://www.instagram.com/details" target="_blank">
+            <button
+              class="mt-2 px-4 py-2 bg-yellow-500 text-black rounded-full"
+            >
+              Know More
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="flex flex-col items-center p-4">
+      <div
+        class="text-white font-bold text-xl mb-4 border-b-4 border-yellow-500"
+      >
+        CONTACT US
+      </div>
+      <p class="text-center mb-4">
+        SRM Valliammai Engineering College, National Highway 45, Potheri, SRM
+        Nagar, Kattankulathur, Tamil Nadu 603203<br />
+        Civil block
+      </p>
+      <div class="flex items-center mb-2">
+        <i class="fab fa-whatsapp text-green-500 mr-2"></i>
+        <span>+91-6382329757</span>
+      </div>
+      <div class="flex items-center mb-2">
+        <i class="fas fa-envelope text-yellow-500 mr-2"></i>
+        <span>Abcd2456@gmail.com</span>
+      </div>
+      <div class="flex items-center mb-4">
+        <i class="fas fa-clock text-yellow-500 mr-2"></i>
+        <span>9AM-5AM</span>
+      </div>
+      <p class="mb-4">fjcgngtjvhnfhgh</p>
+      <a href="https://www.instagram.com/construo" target="_blank">
+        <i class="fab fa-instagram text-yellow-500 text-3xl mb-4"></i>
+      </a>
+      <div class="w-full mb-4">
+        <iframe
+          class="w-full h-64"
+          frameborder="0"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.468206282073!2d80.0305123148001!3d12.8234649909498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f7d1b1b1b1b1%3A0x1b1b1b1b1b1b1b1b!2sSRM%20Valliammai%20Engineering%20College!5e0!3m2!1sen!2sin!4v1634567890123!5m2!1sen!2sin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- Page Footer -->
+    <footer class="bg-gray-900 text-center py-4">
+      <p class="mb-2 text-yellow-500 font-bold">Construo -25</p>
+      <p class="mb-2">Copyright © 2025 All rights reserved</p>
+      <p class="mb-4">
+        Powered By <a class="text-yellow-500" href="#">mohan</a>
+      </p>
+      <a href="https://www.instagram.com/construo" target="_blank">
+        <i class="fab fa-instagram text-yellow-500 text-3xl"></i>
+      </a>
+    </footer>
+
+    <!-- Share Menu Popup -->
+    <div id="shareMenu" class="share-menu p-4">
+      <a
+        href="https://wa.me/?text=Check out this website: www.construosrmvec.com"
+        target="_blank"
+        class="flex items-center mb-4"
+      >
+        <i class="fab fa-whatsapp text-2xl text-green-500 mr-2"></i>
+        <span>WhatsApp</span>
+      </a>
+      <a
+        href="sms:?body=Check out this website: www.construosrmvec.com"
+        class="flex items-center mb-4"
+      >
+        <i class="fas fa-sms text-2xl text-blue-500 mr-2"></i>
+        <span>Message</span>
+      </a>
+      <button id="copyLinkButton" class="flex items-center">
+        <i class="fas fa-link text-2xl text-gray-500 mr-2"></i>
+        <span>Copy Link</span>
+      </button>
+    </div>
+
+    <!-- Image Modal Dialog -->
+    <div id="modal" class="modal">
+      <img id="modalImage" src="" alt="Event Poster" />
+      <button id="closeModalButton" class="close-button">
+        <i class="fas fa-times"></i>
+      </button>
+      <a id="downloadButton" class="download-button" href="#" download>
+        <i class="fas fa-download"></i> Download
+      </a>
+    </div>
+
+    <script src="user_side_scripts.js"></script>
+  </body>
+</html>
